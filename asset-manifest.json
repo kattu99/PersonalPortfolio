@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5985822c.chunk.css",
+    "main.js": "/static/js/main.9536c122.chunk.js",
+    "main.js.map": "/static/js/main.9536c122.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ccef853a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ccef853a.js.map",
+    "static/css/2.7df41cd5.chunk.css": "/static/css/2.7df41cd5.chunk.css",
+    "static/js/2.ddf81a9b.chunk.js": "/static/js/2.ddf81a9b.chunk.js",
+    "static/js/2.ddf81a9b.chunk.js.map": "/static/js/2.ddf81a9b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.671dc13c1668616906f8112754d1de9f.js": "/precache-manifest.671dc13c1668616906f8112754d1de9f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.7df41cd5.chunk.css.map": "/static/css/2.7df41cd5.chunk.css.map",
+    "static/css/main.5985822c.chunk.css.map": "/static/css/main.5985822c.chunk.css.map",
+    "static/js/2.ddf81a9b.chunk.js.LICENSE.txt": "/static/js/2.ddf81a9b.chunk.js.LICENSE.txt",
+    "static/media/HOSPISHARE_LOGO.png": "/static/media/HOSPISHARE_LOGO.adc4375b.png",
+    "static/media/Photo-Applying.jpeg": "/static/media/Photo-Applying.16bdef61.jpeg",
+    "static/media/axia.jpeg": "/static/media/axia.fba4f496.jpeg",
+    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/customerltv.png": "/static/media/customerltv.6793a41f.png",
+    "static/media/livin.png": "/static/media/livin.d84fe685.png",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/piece.png": "/static/media/piece.3f4422e1.png",
+    "static/media/plasticbottle.png": "/static/media/plasticbottle.c8b1d94c.png",
+    "static/media/shortener.png": "/static/media/shortener.4d6db17c.png",
+    "static/media/uberlytics.gif": "/static/media/uberlytics.9d6934ae.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ccef853a.js",
+    "static/css/2.7df41cd5.chunk.css",
+    "static/js/2.ddf81a9b.chunk.js",
+    "static/css/main.5985822c.chunk.css",
+    "static/js/main.9536c122.chunk.js"
+  ]
+}
