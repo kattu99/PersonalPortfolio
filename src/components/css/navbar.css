@@ -1,0 +1,58 @@
+.navBarVertical {
+    position: fixed;
+    left: 0;
+    top: 0; 
+    padding-top: 30px;
+    height: 100vh;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+.navBarName {
+    height: 50px;
+}
+
+.navBarLinks {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black
+}
+
+.wrapper {
+    display: flex; 
+    flex-direction: row;
+}
+
+.icon:hover {
+    color: #0033cc;
+}
+
+.navBarSocial {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color: #303030;
+}
+
+.link:hover {
+    color: #0033cc;
+}
+
+.content {
+    position: relative;
+    left: 300px;
+    display: flex;
+    flex-direction: column;
+}
