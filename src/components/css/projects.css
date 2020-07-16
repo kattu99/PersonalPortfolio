@@ -7,12 +7,12 @@
     padding: 16px;
 }
 
-@media (min-width: 1000px) {
-    .cards { grid-template-columns: repeat(3, 1fr); }
+@media (min-width: 1500px) {
+    .projects { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (min-width: 1200px) {
-    .projects { grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 2000px) {
+    .projects { grid-template-columns: repeat(3, 1fr); }
 }
 
 .displayImage {
@@ -38,4 +38,11 @@
     grid-gap: 30px;
     margin-bottom: 30px;
     margin-right: 30px;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

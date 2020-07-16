@@ -27,7 +27,6 @@
 .wrapper {
     display: flex; 
     flex-direction: row;
-    width: 100vw;
 }
 
 .icon:hover {
@@ -54,5 +53,7 @@
 .content {
     margin-left: 300px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
