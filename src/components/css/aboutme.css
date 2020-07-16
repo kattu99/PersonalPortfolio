@@ -6,6 +6,13 @@
     justify-content: center;
 }
 
+.infoMobile {
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
 .info {
     margin-top: 40px;
     width: 600px;

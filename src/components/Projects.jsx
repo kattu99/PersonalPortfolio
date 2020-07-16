@@ -17,17 +17,33 @@ class ProjectCard extends Component {
     }
 
     render () {
-        return (
-            <div className='projectCard'>
-                <div className='displayImage'>
-                    <img className='projectCardImage' src={this.props.projectImage} alt="hello"/>
+        if (!this.props.displayMobile){
+            return (
+                <div className='projectCard'>
+                    <div className='displayImage'>
+                        <img className='projectCardImage' src={this.props.projectImage} alt="hello"/>
+                    </div>
+                    <div className='projectText'>
+                        <p className='projectCardName'>{this.props.projectName}</p>
+                        <p className='projectCardDescription'>{this.props.projectDescription}</p>
+                    </div>
                 </div>
-                <div className='projectText'>
-                    <p className='projectCardName'>{this.props.projectName}</p>
-                    <p className='projectCardDescription'>{this.props.projectDescription}</p>
+            )
+        }
+        else {
+            return (
+                <div className='projectCardMobile'>
+                    <div className='displayImage'>
+                        <img className='projectCardImage' src={this.props.projectImage} alt="hello"/>
+                    </div>
+                    <div className='projectText'>
+                        <p className='projectCardName'>{this.props.projectName}</p>
+                        <p className='projectCardDescription'>{this.props.projectDescription}</p>
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        }
+        
     }
 } 
 
@@ -38,22 +54,42 @@ class Projects extends Component {
     }
 
     render () {
-        return (
-            <div className='projectContainer'>
-                <div className='projects'>
-                    <ProjectCard projectName="Axia" projectDescription="A tool for comparable analysis" projectImage={axia}/>
-                    <ProjectCard projectName="Uberlytics" projectDescription="Understand trends in your uber rides and find other people" projectImage={uberlytics}/>
-                    <ProjectCard projectName="Shortener" projectDescription="Process lecture videos into slides and transcript" projectImage={shortener}/>
-                    <ProjectCard projectName="Lifetime Value + Cohort Analysis Tool" projectDescription="E-commerce tool to segment customers and perform analytics" projectImage={customerltv}/>
-                    <ProjectCard projectName="Roommate Matching Website" projectDescription="Find roommates with similar interests easily" projectImage={livin}/>
-                    <ProjectCard projectName="Real Estate Fractional Ownership Website" projectDescription="Front End for an app that displays homes and lets you big for shares" projectImage={piece}/>
-                    <ProjectCard projectName="HospiShare" projectDescription="Ridesharing Application for hospital visits" projectImage={hospishare}/>
-                    <ProjectCard projectName="The Trash Collective" projectDescription="Take pictures of plastic bottles and get directed to the nearest recycling bin" projectImage={plasticbottle}/>
+        if (!this.props.displayMobile) {
+            return (
+                <div className='projectContainer'>
+                    <div className='projects'>
+                        <ProjectCard projectName="Axia" projectDescription="A tool for comparable analysis" projectImage={axia}/>
+                        <ProjectCard projectName="Uberlytics" projectDescription="Understand trends in your uber rides and find other people" projectImage={uberlytics}/>
+                        <ProjectCard projectName="Shortener" projectDescription="Process lecture videos into slides and transcript" projectImage={shortener}/>
+                        <ProjectCard projectName="Lifetime Value + Cohort Analysis Tool" projectDescription="E-commerce tool to segment customers and perform analytics" projectImage={customerltv}/>
+                        <ProjectCard projectName="Roommate Matching Website" projectDescription="Find roommates with similar interests easily" projectImage={livin}/>
+                        <ProjectCard projectName="Real Estate Fractional Ownership Website" projectDescription="Front End for an app that displays homes and lets you big for shares" projectImage={piece}/>
+                        <ProjectCard projectName="HospiShare" projectDescription="Ridesharing Application for hospital visits" projectImage={hospishare}/>
+                        <ProjectCard projectName="The Trash Collective" projectDescription="Take pictures of plastic bottles and get directed to the nearest recycling bin" projectImage={plasticbottle}/>
+                    </div>
                 </div>
-            </div>
-        )
-
-    }
+            )
+        }
+        else {
+            return (
+                <div className='projectContainer'>
+                    <div className='projectsMobile'>
+                        <ProjectCard displayMobile={true} projectName="Axia" projectDescription="A tool for comparable analysis" projectImage={axia}/>
+                        <ProjectCard displayMobile={true} projectName="Uberlytics" projectDescription="Understand trends in your uber rides and find other people" projectImage={uberlytics}/>
+                        <ProjectCard displayMobile={true} projectName="Shortener" projectDescription="Process lecture videos into slides and transcript" projectImage={shortener}/>
+                        <ProjectCard displayMobile={true} projectName="Lifetime Value + Cohort Analysis Tool" projectDescription="E-commerce tool to segment customers and perform analytics" projectImage={customerltv}/>
+                        <ProjectCard displayMobile={true} projectName="Roommate Matching Website" projectDescription="Find roommates with similar interests easily" projectImage={livin}/>
+                        <ProjectCard displayMobile={true} projectName="Real Estate Fractional Ownership Website" projectDescription="Front End for an app that displays homes and lets you big for shares" projectImage={piece}/>
+                        <ProjectCard displayMobile={true} projectName="HospiShare" projectDescription="Ridesharing Application for hospital visits" projectImage={hospishare}/>
+                        <ProjectCard displayMobile={true} projectName="The Trash Collective" projectDescription="Take pictures of plastic bottles and get directed to the nearest recycling bin" projectImage={plasticbottle}/>
+                    </div>
+                </div>
+            )
+        }
+    }   
 }
 
 export default Projects;
+Projects.propTypes = {
+    mobile: PropTypes.bool
+}
