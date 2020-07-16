@@ -27,6 +27,7 @@
 .wrapper {
     display: flex; 
     flex-direction: row;
+    width: 100vw;
 }
 
 .icon:hover {
@@ -51,8 +52,7 @@
 }
 
 .content {
-    position: relative;
-    left: 300px;
+    margin-left: 300px;
     display: flex;
     flex-direction: column;
 }
